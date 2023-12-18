@@ -1,0 +1,598 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header {
+}
+
+header > .navbar {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header > .navbar > .logo {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0cap;
+  width: 600px;
+}
+
+header > .navbar > .quick {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: end;
+  gap: 65px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: end;
+  width: 475px;
+}
+
+header. > .navbar > .quick > * {
+}
+
+.hero {
+  width: 80%;
+  max-width: 1075px;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero > .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+
+.hero > .text > div > h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.hero > .text > div > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.hero > .pic {
+}
+
+.trusted-by {
+  width: 80%;
+  max-width: 1075px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.trusted-by > .header {
+  height: 50px;
+}
+
+.trusted-by > .comp-logo {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: ##f6f6f6;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.branding-design {
+  width: 80%;
+  max-width: 1075px;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.branding-design > .pic {
+}
+
+.branding-design > .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+
+.branding-design > .text > div > h1 {
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.branding-design > .text > div > p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.branding-design > .text > div > img {
+}
+
+.custom-plugin {
+  width: 80%;
+  max-width: 1075px;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.custom-plugin > .pic {
+}
+
+.custom-plugin > .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+
+.custom-plugin > .text > div > h1 {
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.custom-plugin > .text > div > p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.testimonials {
+  width: 80%;
+  max-width: 1075px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.testimonials > .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+
+.testimonials > .outie {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonials > .outie > .innie {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+  text-align: center;
+  background-color: rgb(228, 228, 228);
+  border-radius: 20px;
+}
+
+.testimonials > .text > div > h1 {
+  text-align: center;
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+}
+
+.testimonials > .text > div > p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.big-thing {
+  width: 80%;
+  max-width: 1075px;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  padding: 2pc;
+}
+
+.big-thing > .pic {
+}
+
+.big-thing > .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+
+.big-thing > .text > div > h1 {
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.big.thing > .text > div > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.footer {
+  width: 100%;
+  height: 500px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  line-height: 3;
+  margin-top: 50px;
+  background-color: #f6f6f6;
+}
+
+.footer > .links-outie {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+
+button {
+  all: unset;
+  width: 167px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #8eadd5;
+  text-align: center;
+  color: white;
+}
+
+.arrow {
+  width: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+  header {
+    height: 150px;
+  }
+
+  header > .navbar {
+    width: 90%;
+    max-width: 1000px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  header > .navbar > .logo {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0cap;
+  }
+
+  header > .navbar > .quick {
+    display: none;
+  }
+
+  .hero {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5pc;
+  }
+
+  .hero > .text > div > h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .hero > .text > div > p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .hero > .pic {
+  }
+
+  .trusted-by {
+    width: 100%;
+    height: 30pc;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15pc;
+  }
+
+  .trusted-by > .header {
+    height: 50px;
+  }
+
+  .trusted-by > .comp-logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    padding: 40px;
+  }
+
+  .trusted-by > .comp-logo > img {
+    width: 100%;
+  }
+
+  .branding-design {
+    width: 80%;
+    max-width: 1075px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15pc;
+  }
+
+  .branding-design > .pic {
+  }
+
+  .branding-design > .text > div > h1 {
+    font-family: Inter;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .branding-design > .text > div > p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .custom-plugin {
+    width: 80%;
+    max-width: 1075px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20pc;
+  }
+
+  .custom-plugin > .pic {
+  }
+
+  .custom-plugin > .text > div > h1 {
+    font-family: Inter;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .custom-plugin > .text > div > p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .testimonials {
+    width: 80%;
+    max-width: 1075px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 35pc;
+  }
+
+  .testimonials > .outie {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .testimonials > .outie > .innie {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(228, 228, 228);
+    border-radius: 20px;
+  }
+
+  .testimonials > .text > div > h1 {
+    text-align: center;
+    font-family: Inter;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+  }
+
+  .testimonials > .text > div > p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .big-thing {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    margin-top: 35pc;
+  }
+
+  .big-thing > .pic {
+    display: none;
+  }
+
+  .big-thing > .text > div > h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .big.thing > .text > div > p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .footer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    line-height: 3;
+    margin-top: 30pc;
+  }
+
+  .footer > .links-outie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .footer > .links-innie > * {
+    justify-content: center;
+  }
+
+  .arrow {
+    rotate: 90deg;
+  }
+}

@@ -1,0 +1,533 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif;
+}
+.section-1 > header > .navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0)
+  );
+}
+.section-1 > header > .navbar > .navbar-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.section-1 > header > .navbar > .navbar-content > .logo {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-1 > header > .navbar > .navbar-content > .logo > p {
+  color: white;
+}
+
+.section-1 > header > .navbar > .navbar-content > nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 100px;
+  color: white;
+}
+
+.section-1 > header > .navbar > .navbar-content > .option-button {
+  color: white;
+}
+
+.section-2 {
+  background-image: url(pics/norwayhill.png);
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-2 > .hero {
+  width: 1080px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.section-2 > .hero > .hero-text > img {
+  width: 225px;
+  height: auto;
+  padding-right: 30px;
+}
+
+.section-2 > .hero > .hero-text > h2 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 37px;
+  letter-spacing: 0.55em;
+  color: white;
+}
+
+.section-2 > .hero > .hero-text > h1 {
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 200px;
+  letter-spacing: 0em;
+  color: white;
+  display: inline;
+}
+
+.section-2 > .hero > .trip {
+  width: 1080px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  gap: 20px;
+}
+
+.section-2 > .hero > .trip > .trip-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.336);
+  width: 420px;
+  height: 100px;
+}
+
+.section-2 > .hero > .trip > .trip-box > .logo {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+
+.section-2 > .hero > .trip > .trip-box > .text > * {
+  width: 300px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.section-2 > .hero > .trip > .trip-box > .text > p {
+  font-weight: 250;
+}
+
+.section-3 {
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.section-3 > .header {
+  height: 100px;
+}
+
+.section-3 > .header > p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0.7em;
+  text-align: center;
+}
+
+.section-3 > .header > h1 {
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.section-3 > .activities {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-3 > .activities > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 350px;
+  height: 620px;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.section-3 > .activities > * > h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
+  letter-spacing: 0em;
+  color: white;
+}
+
+.section-3 > .activities > * > p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: white;
+}
+
+.section-3 > .activities > .box-1 {
+  background-image: url("pics/box1.jpg");
+  background-size: cover;
+}
+
+.section-3 > .activities > .box-2 {
+  background-image: url("pics/box2.png");
+  background-size: cover;
+}
+
+.section-3 > .activities > .box-3 {
+  background-image: url("pics/box3.png");
+  background-size: cover;
+}
+
+.section-3 > .activities > .box-4 {
+  background-image: url("pics/box4.png");
+  background-size: cover;
+}
+
+.section-4 {
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.section-4 > .header {
+  height: 100px;
+}
+
+.section-4 > .header > p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0.7em;
+  text-align: center;
+}
+
+.section-4 > .header > h1 {
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.section-4 > .philosophy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-4 > .philosophy > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 725px;
+  height: 640px;
+  border-radius: 10px;
+}
+
+.section-4 > .philosophy > .caption {
+  text-align: left;
+  padding: 0 0 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-4 > .philosophy > .caption > .text > h3 {
+  font-size: 32px;
+  padding: 0 0 10px 3rem;
+  display: inline-block;
+}
+
+.section-4 > .philosophy > .caption > .text > .number {
+  font-size: 32px;
+  font-weight: 500;
+  color: grey;
+  padding: 0 0 0px 0px;
+  display: inline-block;
+}
+
+.section-4 > .philosophy > .caption > .text > p {
+  padding: 0 0 10px 6rem;
+}
+
+.section-4 > .philosophy > .pic {
+  background-image: url("pics/philo1.png");
+  background-size: cover;
+}
+
+.section-5 {
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: grey;
+}
+
+.section-5 > .header {
+  height: 100px;
+}
+
+.section-5 > .header > p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0.7em;
+  text-align: center;
+}
+
+.section-5 > .header > h1 {
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.section-5 > .hotels {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-5 > .hotels > .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.section-5 > .hotels > * > h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 39px;
+  letter-spacing: 0em;
+  color: black;
+}
+
+.section-6 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.section-6 > header {
+  height: 100px;
+}
+
+.section-6 > header > p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0.7em;
+  text-align: center;
+}
+
+.section-6 > header > h1 {
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.section-6 > .partners {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.section-7 {
+  width: 1200px;
+  height: 550px;
+  background-image: url(pics/testimony.png);
+  background-size: cover;
+  border-radius: 10px;
+  padding-bottom: 80px;
+}
+
+.section-7 > .testimonials {
+  width: 1080px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  padding-top: 60px;
+}
+
+.section-7 > .testimonials > .box {
+  width: 1300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0px;
+  gap: 40px;
+}
+
+.section-7 > .testimonials > .box > .comment {
+  background-image: url(pics/dialogbox.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding: 50px 30px 50px 30px;
+  line-height: 10px;
+}
+
+.section-7 > .testimonials > .box > .comment > h1 {
+  font-family: Manrope;
+  font-size: 100px;
+  font-weight: 800;
+  text-indent: -10px;
+  color: #ff9921;
+}
+
+.section-7 > .testimonials > .box > .comment > p {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.section-7 > .testimonials > .box > .pic-name-company {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+
+.section-7 > .testimonials > .box > .pic-name-company > .name-company {
+  margin-top: 5px;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: #0c2f3a;
+  margin-top: 80px;
+  color: white;
+}
+
+footer > .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+footer > .footer > .company > * {
+  width: 1000px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer > .footer > .company > .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border-image: auto;
+}
+
+footer > .footer > .company > .logo > p {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28px;
+  letter-spacing: 0.25em;
+  text-align: left;
+}
+
+footer > .footer > hr {
+  width: 60%;
+}
+
+footer > .footer > .bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+}
+
+footer > .footer > .bottom > .social-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}

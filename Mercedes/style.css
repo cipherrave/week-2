@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #e9ecef;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  position: fixed;
+  top: 0;
+}
+
+header > .navbar {
+  width: 1037px;
+  max-width: 1037px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 187px;
+}
+
+header > .navbar > .logo {
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+header > .navbar > .links-search {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
+header > .navbar > .links-search > nav {
+  width: 737px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+header > .navbar > .links-search > .search {
+  width: 250px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 100px;
+  padding: 0 5px 0 5px;
+}
+
+header > .navbar > .links-search > .search > input {
+  all: unset;
+  text-align: center;
+  padding: 0 5px 0 5px;
+}
+
+.content {
+  width: 100%;
+  min-width: 1037px;
+  max-width: 1037px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.content > .price {
+  width: 90%;
+  height: 25%;
+  text-align: left;
+  font-size: 20px;
+}
+
+.content > .price > h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+}
+
+.content > .price > p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+
+.content > .carpic {
+  width: 90%;
+  height: 75%;
+}
+
+footer {
+  width: 100%;
+  height: 110px;
+  background-color: #ced4da;
+  position: fixed;
+  bottom: 0;
+}
+
+footer > .black {
+  width: 100%;
+  height: 10px;
+  background-color: black;
+}
+
+footer > .detailsbar {
+  width: 1152px;
+  max-width: 1152px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 200px;
+}
+
+footer > .detailsbar > .details {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+}
+
+footer > .detailsbar > .details > .details-text {
+  width: 700px;
+}
+
+footer > .detailsbar > .details > * > h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+}
+
+footer > .detailsbar > .details > * > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+
+footer > .detailsbar > .full-details {
+  width: 137px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    position: fixed;
+    top: 0;
+  }
+
+  header > .navbar {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 700px;
+  }
+
+  header > .navbar > .logo {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  header > .navbar > .links-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+  }
+
+  header > .navbar > .links-search > nav {
+    display: none;
+  }
+
+  header > .navbar > .links-search > .search {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 100px;
+    padding: 0 5px 0 5px;
+    font-size: 70px;
+  }
+
+  header > .navbar > .links-search > .search > input {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100%;
+  }
+
+  .content > .price {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content > .price > h3 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0em;
+  }
+
+  .content > .price > p {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0em;
+  }
+
+  .content > .carpic {
+    width: 100%;
+    height: 100%;
+  }
+
+  footer {
+    height: 700px;
+    background-color: #ced4da;
+  }
+
+  footer > .black {
+    display: none;
+  }
+
+  footer > .detailsbar {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 200px;
+  }
+
+  footer > .detailsbar > .details {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+  }
+
+  footer > .detailsbar > .details > * > h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 36px;
+    text-wrap: nowrap;
+    letter-spacing: 0em;
+  }
+
+  footer > .detailsbar > .details > * > p {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+  }
+
+  footer > .detailsbar > .full-details {
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+    color: white;
+    background-color: #141414;
+    border-radius: 100px;
+    text-wrap: nowrap;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+  }
+
+  i {
+    display: none;
+  }
+}
