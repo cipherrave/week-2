@@ -7,40 +7,54 @@
   font-family: "Poppins";
 }
 
+body {
+  background-color: #e9ecef;
+}
+
 header {
   width: 100%;
   height: 6rem;
-  background-color: aqua;
+  position: fixed;
+  top: 0;
 }
 
 header > .navbar {
-  width: 80%;
+  width: 90%;
+  max-width: 1152px;
   height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header > .navbar > .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+header > .navbar > .logo > p {
+  color: #343a40;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+header > .navbar > .links {
+  width: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 4rem;
 }
 
-header > .navbar > .logo {
-  width: 150px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-header > .navbar > .links {
-  width: 700px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-header > .navbar > .links > .search {
+header > .navbar > .search {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -51,43 +65,58 @@ header > .navbar > .links > .search {
   border-radius: 100px;
 }
 
-header > .navbar > .links > .search > input {
+header > .navbar > .search > input {
   all: unset;
   text-align: center;
 }
 
 .content {
-  width: 80%;
+  margin-top: 100px;
+  width: 90%;
+  max-width: 1152px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .content > .price {
+  width: 90%;
+  height: 20%;
 }
 
-.content > .carpic {
+.content > .price > h2 {
+  color: #343a40;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.content > .price > p {
+  color: #6c757d;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.content > .carpic > img {
+  width: 100%;
+  object-fit: contain;
 }
 
 footer {
   width: 100%;
-  height: 6rem;
-  background-color: #343a40;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: end;
-}
-
-footer > .bg {
-  width: 100%;
-  height: 5.5rem;
+  height: 150px;
+  position: fixed;
+  bottom: 0;
   background-color: #ced4da;
+  border-top: solid black;
 }
 
-footer > .bg > .content {
-  width: 80%;
+footer > .content-footer {
+  width: 90%;
+  max-width: 1152px;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -95,7 +124,92 @@ footer > .bg > .content {
   align-items: center;
 }
 
-footer > .bg > .content > .info {
+footer > .content-footer > .info {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 30px;
+}
+
+footer > .content-footer > .full-details {
+  color: #343a40;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media only screen and (max-width: 600px) {
+  header > .navbar {
+    width: 90%;
+    height: 100%;
+  }
+
+  header > .navbar > .links > span {
+    display: none;
+  }
+
+  header > .navbar > .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 15rem;
+    height: 2rem;
+    border-radius: 100px;
+  }
+
+  header > .navbar > .search > input {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    margin-top: 10rem;
+    gap: 7pc;
+  }
+
+  .content > .price {
+    width: 80%;
+    text-align: center;
+  }
+
+  footer {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    bottom: 0;
+    background-color: #e9ecef;
+    border-top: none;
+  }
+
+  footer > .content-footer {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5pc;
+  }
+
+  footer > .content-footer > .full-details {
+    color: white;
+    border-radius: 50px;
+    background-color: #141414;
+    padding: 10px 45px 10px 45px;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .full-details > i {
+    display: none;
+  }
 }
